@@ -28,10 +28,6 @@ public class ChatBotEngine {
 
     public String procesarMensaje(String mensaje, String nombreUsuario) {
         try {
-            if (mensaje == null || mensaje.trim().isEmpty()) {
-                return "Por favor, escribe un mensaje válido.";
-            }
-
             if (RE.esSaludo(mensaje)) {
                 return obtenerSaludoInicial() + " " + nombreUsuario + "!";
             }
