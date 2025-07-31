@@ -9,7 +9,7 @@ public class ChatBotEngine {
     public RespuestaEngine RE;
     public Usuario usuario;
     public BufferedReader gafitas;
-    private static final Logger logger = Logger.getLogger(ChatBotEngine.class.getName());
+    public Logger logger = Logger.getLogger(ChatBotEngine.class.getName());
 
     public ChatBotEngine() {
         try {
